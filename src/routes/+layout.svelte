@@ -4,4 +4,4 @@
     <a href="/video">VIDEO</a>
 </h3>
 
-<slot/>
+<slot />
