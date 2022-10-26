@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .page_body {
+                margin: 0;
+                padding: 0;
+                transition: background 300ms linear, color 300ms linear;
+            }
+
+            .box {
+                border: 10px outset Gold;
+                box-sizing: border-box;
+                /*background-color: lightblue;*/
+                text-align: center;
+                position: relative;
+                height: 450px;
+                width: 100%;
+            }
+
+            .box .box_footer {
+                position: absolute;
+                bottom: 0;
+            }
+        </style>
+
+        <script>
+            const colors = [
+                'White',
+                'BlanchedAlmond',
+                'BurlyWood',
+                'Chartreuse',
+                'CadetBlue',
+                'CornflowerBlue',
+            ];
+
+            function getBoxHeight() {
+                const { height } = getComputedStyle(
+                    document.querySelector('.box'),
+                );
+                const heightNoPx = height.substring(0, height.length - 2);
+
+                return Number(heightNoPx);
+            }
+
+            window.onscroll = function () {
+                const { scrollTop } = document.documentElement;
+                const boxHeight = getBoxHeight();
+                const colorIndex =
+                    Math.floor((scrollTop + 100) / boxHeight) % colors.length;
+
+                console.log({ scrollTop, boxHeight, colorIndex });
+
+                document.getElementById('main_body').style['background-color'] =
+                    colors[colorIndex];
+            };
+        </script>
+    </head>
+    <body id="main_body" class="page_body">
+        <div class="box">
+            <h1>Krell Multimedia GmbH</h1>
+            <img src="krell.jpeg" height="280" alt="krellmeister" />
+            <table width="100%">
+                <tr>
+                    <td><a href="#content1">Content1</a></td>
+                    <td><a href="#content2">Content2</a></td>
+                    <td><a href="#content3">Content3</a></td>
+                    <td><a href="#content4">Content4</a></td>
+                    <td><a href="#content5">Content5</a></td>
+                    <td><a href="#content6">Content6</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content1" class="box">
+            <span class="box_footer"><a href="#">top</a></span>
+        </div>
+        <div id="content2" class="box">
+            <span class="box_footer"><a href="#">top</a></span>
+        </div>
+        <div id="content3" class="box">
+            <span class="box_footer"><a href="#">top</a></span>
+        </div>
+        <div id="content4" class="box">
+            <span class="box_footer"><a href="#">top</a></span>
+        </div>
+        <div id="content5" class="box">
+            <span class="box_footer"><a href="#">top</a></span>
+        </div>
+        <div id="content6" class="box">
+            <span class="box_footer"><a href="#">top</a></span>
+        </div>
+    </body>
+</html>

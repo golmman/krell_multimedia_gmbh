@@ -30,19 +30,19 @@
 
 <h1>VIDEO</h1>
 
-<img src="https://vumbnail.com/86619623_small.jpg" />
+<img src="https://vumbnail.com/86619623_small.jpg" alt="" />
 
 <div style={{ width: '50%' }}>
     <TileGroup>
         <ClickableTile href="#">
-            <img src="https://vumbnail.com/86619623_small.jpg" />
+            <img src="https://vumbnail.com/86619623_small.jpg" alt="" />
         </ClickableTile>
         <ClickableTile href="#">abc</ClickableTile>
     </TileGroup>
 
     <Tabs type="container" autoWidth="true" height="500px">
         <!-- https://stackoverflow.com/a/61662687 -->
-        <Tab><img src="https://vumbnail.com/86619623_small.jpg" /></Tab>
+        <Tab><img src="https://vumbnail.com/86619623_small.jpg" alt="" /></Tab>
         <Tab label="Tab label 2" disabled />
         <Tab label="Tab label 3" />
         <Tab label="Tab label 4" />

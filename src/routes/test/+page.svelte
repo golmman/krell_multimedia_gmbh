@@ -12,24 +12,24 @@
     <tr>
         <td
             ><ClickableTile>
-                <img src="https://vumbnail.com/86619623_small.jpg" />
+                <img src="https://vumbnail.com/86619623_small.jpg" alt="" />
             </ClickableTile></td
         >
         <td
             ><ClickableTile>
-                <img src="https://vumbnail.com/86619623_small.jpg" />
+                <img src="https://vumbnail.com/86619623_small.jpg" alt="" />
             </ClickableTile></td
         >
     </tr>
     <tr>
         <td
             ><ClickableTile>
-                <img src="https://vumbnail.com/86619623_small.jpg" />
+                <img src="https://vumbnail.com/86619623_small.jpg" alt="" />
             </ClickableTile></td
         >
         <td
             ><ClickableTile>
-                <img src="https://vumbnail.com/86619623_small.jpg" />
+                bla
             </ClickableTile></td
         >
     </tr>
@@ -43,8 +43,3 @@
     Set to "{values[1]}"
 </Button>
 
-<style>
-    div {
-        margin: var(--cds-spacing-05) 0;
-    }
-</style>
