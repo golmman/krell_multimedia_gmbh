@@ -9,6 +9,22 @@
                 scroll-behavior: smooth;
             }
 
+            a:link,
+            a:visited {
+                color: Gold;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 300ms linear;
+            }
+
+            a:hover,
+            a:active {
+                color: Black;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 300ms linear;
+            }
+
             .page_body {
                 margin: 0;
                 padding: 0;
@@ -27,9 +43,11 @@
 
             .box .box_footer {
                 position: absolute;
-                bottom: 0;
+                bottom: 5px;
             }
         </style>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
 
         <script>
             const colors = [
@@ -50,6 +68,14 @@
                 return Number(heightNoPx);
             }
 
+            window.onload = function () {
+                console.log('LOADED');
+                const player = new Vimeo.Player('keindeo', {
+                    id: 86619623,
+                    width: window.innerWidth / 2,
+                });
+            };
+
             window.onscroll = function () {
                 const { scrollTop } = document.documentElement;
                 const boxHeight = getBoxHeight();
@@ -63,11 +89,12 @@
             };
         </script>
     </head>
+
     <body id="main_body" class="page_body">
         <div class="box">
             <h1>Krell Multimedia GmbH</h1>
             <img src="krell.jpeg" height="280" alt="krellmeister" />
-            <table width="100%">
+            <table class="box_footer" width="100%">
                 <tr>
                     <td><a href="#content1">Content1</a></td>
                     <td><a href="#content2">Content2</a></td>
@@ -79,6 +106,8 @@
             </table>
         </div>
         <div id="content1" class="box">
+            <h2>Kein Deo</h2>
+            <div id="keindeo"></div>
             <span class="box_footer"><a href="#">top</a></span>
         </div>
         <div id="content2" class="box">
