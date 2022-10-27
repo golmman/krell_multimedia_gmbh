@@ -9,15 +9,6 @@
                 scroll-behavior: smooth;
             }
 
-            h1,
-            h2 {
-                color: Gold;
-            }
-
-            td {
-                padding: 10px;
-            }
-
             iframe {
                 display: block;
                 margin: 0 auto;
@@ -39,10 +30,18 @@
                 transition: color 300ms linear;
             }
 
+            .header {
+                color: Gold;
+            }
+
+            .nav__td {
+                padding: 10px;
+            }
+
             .page_body {
                 margin: 0;
                 padding: 0;
-                transition: background 300ms linear, color 300ms linear;
+                transition: background 1000ms linear, color 1000ms linear;
             }
 
             .box {
@@ -132,48 +131,52 @@
 
     <body id="main_body" class="page_body">
         <div class="box">
-            <h1>Krell Multimedia GmbH</h1>
+            <h1 class="header">Krell Multimedia GmbH</h1>
             <img src="krell.jpeg" height="280" alt="krellmeister" />
             <table class="box_footer" width="100%">
                 <tr>
-                    <td><a href="#content1">VISUAL MUSIC</a></td>
-                    <td><a href="#content2">MUSIC VIDEO</a></td>
-                    <td><a href="#content3">DOCUMENTARY / IMAGEFILM</a></td>
+                    <td class="nav__td">
+                        <a href="#content1">VISUAL MUSIC</a>
+                    </td>
+                    <td class="nav__td"><a href="#content2">MUSIC VIDEO</a></td>
+                    <td class="nav__td">
+                        <a href="#content3">DOCUMENTARY / IMAGEFILM</a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="#content4">1 MIN</a></td>
-                    <td><a href="#content5">EXHIBITION</a></td>
-                    <td><a href="#content6">CONTACT</a></td>
+                    <td class="nav__td"><a href="#content4">1 MIN</a></td>
+                    <td class="nav__td"><a href="#content5">EXHIBITION</a></td>
+                    <td class="nav__td"><a href="#content6">CONTACT</a></td>
                 </tr>
             </table>
         </div>
         <div id="content1" class="box">
-            <h2>Visual Music</h2>
+            <h2 class="header">Visual Music</h2>
             <div id="player1"></div>
-            <span class="box_footer"><a href="#">top</a></span>
+            <span class="box_footer"><a href="#">TOP</a></span>
         </div>
         <div id="content2" class="box">
-            <h2>Music Video</h2>
+            <h2 class="header">Music Video</h2>
             <div id="player2"></div>
-            <span class="box_footer"><a href="#">top</a></span>
+            <span class="box_footer"><a href="#">TOP</a></span>
         </div>
         <div id="content3" class="box">
-            <h2>Documentary / Imagefilm</h2>
+            <h2 class="header">Documentary / Imagefilm</h2>
             <div id="player3"></div>
-            <span class="box_footer"><a href="#">top</a></span>
+            <span class="box_footer"><a href="#">TOP</a></span>
         </div>
         <div id="content4" class="box">
-            <h2>1 min</h2>
+            <h2 class="header">1 min</h2>
             <div id="player4"></div>
-            <span class="box_footer"><a href="#">top</a></span>
+            <span class="box_footer"><a href="#">TOP</a></span>
         </div>
         <div id="content5" class="box">
-            <h2>Exhibitions</h2>
+            <h2 class="header">Exhibitions</h2>
             <div id="player5"></div>
-            <span class="box_footer"><a href="#">top</a></span>
+            <span class="box_footer"><a href="#">TOP</a></span>
         </div>
         <div id="content6" class="box">
-            <h2>Contact</h2>
+            <h2 class="header">Contact</h2>
             <p><b>lucas-world-wide-web@aol.com</b></p>
 
             <p>Also find me on</p>
@@ -183,7 +186,7 @@
             <p><b>icq</b></p>
             <p><b>myspace</b></p>
             <p><b>Windows 95™ Hangouts</b></p>
-            <span class="box_footer"><a href="#">top</a></span>
+            <span class="box_footer"><a href="#">TOP</a></span>
         </div>
     </body>
 </html>
