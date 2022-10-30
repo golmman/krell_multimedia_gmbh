@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <style>
+            * {
+                background-color: Black;
+                color: LightGray;
+            }
+        </style>
+
+        <script src="components/test/test.js" defer></script>
+        <script>
+        </script>
+    </head>
+
+    <body>
+        <h1>web components demo</h1>
+
+        <km-test>
+            <span slot="my-text">aaa</span>
+            <span slot="my-text2">111</span>
+        </km-test>
+        <km-test>
+            <button slot="my-text">bbbb</button>
+            <span slot="my-text2">222</span>
+        </km-test>
+    </body>
+</html>
