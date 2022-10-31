@@ -6,6 +6,19 @@
             padding: 5px;
         }
     </style>
-    <p><slot name="my-text">My default text</slot></p>
-    <b><slot name="my-text2">My default text</slot></b>
+
+    <table border="1">
+        <tr>
+            <td colspan="3">main</td>
+        </tr>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+
+        <slot name="s2"></slot>
+    </table>
+
+    <p><slot name="s1"></slot></p>
 </template>

@@ -11,21 +11,30 @@
             }
         </style>
 
+        <!--
+        <script src="main.js" defer></script>
+        -->
+
         <script src="components/test/test.js" defer></script>
-        <script>
-        </script>
+        <script src="components/km-video-element/component.js" defer></script>
+
+        <script></script>
     </head>
 
     <body>
         <h1>web components demo</h1>
 
+        <km-video-element></km-video-element>
+
         <km-test>
-            <span slot="my-text">aaa</span>
-            <span slot="my-text2">111</span>
+            <tr slot="s2">
+                <td>aaa</td>
+                <td>aaa</td>
+                <td>ttttt</td>
+            </tr>
         </km-test>
         <km-test>
-            <button slot="my-text">bbbb</button>
-            <span slot="my-text2">222</span>
+            <button slot="s1">bbbb</button>
         </km-test>
     </body>
 </html>
