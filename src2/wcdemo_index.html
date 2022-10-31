@@ -15,7 +15,7 @@
         <script src="main.js" defer></script>
         -->
 
-        <script src="components/test/test.js" defer></script>
+        <script src="components/km-video-list/component.js" defer></script>
         <script src="components/km-video-element/component.js" defer></script>
 
         <script></script>
@@ -24,17 +24,18 @@
     <body>
         <h1>web components demo</h1>
 
+        <!--
         <km-video-element></km-video-element>
+https://stackoverflow.com/questions/49786436/accessing-childnodes-of-custom-elments?noredirect=1&lq=1
 
-        <km-test>
-            <tr slot="s2">
-                <td>aaa</td>
-                <td>aaa</td>
-                <td>ttttt</td>
-            </tr>
-        </km-test>
-        <km-test>
-            <button slot="s1">bbbb</button>
-        </km-test>
+https://stackoverflow.com/questions/49027807/how-to-use-child-elements-in-web-components
+
+https://stackoverflow.com/questions/50404970/web-components-pass-data-to-and-from
+        -->
+
+        <km-video-list>
+            <km-video-element></km-video-element>
+            <km-video-element></km-video-element>
+        </km-video-list>
     </body>
 </html>
